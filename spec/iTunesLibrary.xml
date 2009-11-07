@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>9.0.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/Users/jeff/Music/iTunes/iTunes%20Music/</string>
+	<key>Library Persistent ID</key><string>xxxxxxxxxxx</string>
+	<key>Tracks</key>
+	<dict>
+		<key>1542</key>
+		<dict>
+			<key>Track ID</key><integer>1542</integer>
+			<key>Name</key><string>Little Round Mirrors</string>
+			<key>Artist</key><string>Harvey Danger </string>
+			<key>Album</key><string>Live @ KEXP</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6203258</integer>
+			<key>Total Time</key><integer>310056</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2008-05-09T02:21:34Z</date>
+			<key>Date Added</key><date>2008-03-19T14:34:04Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Comments</key><string>MoodyC1</string>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3294902006</integer>
+			<key>Play Date UTC</key><date>2008-05-29T15:33:26Z</date>
+			<key>Rating</key><integer>80</integer>
+			<key>Album Rating</key><integer>80</integer>
+			<key>Album Rating Computed</key><true/>
+			<key>Normalization</key><integer>464</integer>
+			<key>Persistent ID</key><string>3F87F87364A05FA8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/jeff/Music/iTunes/iTunes%20Music/Harvey%20Danger/Live%20@%20KEXP/Little%20Round%20Mirrors.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1544</key>
+		<dict>
+			<key>Track ID</key><integer>1544</integer>
+			<key>Name</key><string>Kissing Families</string>
+			<key>Artist</key><string>Silversun Pickups</string>
+			<key>Album</key><string>Pikul</string>
+			<key>Genre</key><string>Alternative &#38; Punk</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8566990</integer>
+			<key>Total Time</key><integer>290612</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>23</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2008-12-02T20:55:52Z</date>
+			<key>Date Added</key><date>2008-03-19T14:34:55Z</date>
+			<key>Bit Rate</key><integer>235</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3316696892</integer>
+			<key>Play Date UTC</key><date>2009-02-05T21:41:32Z</date>
+			<key>Rating</key><integer>80</integer>
+			<key>Album Rating</key><integer>60</integer>
+			<key>Album Rating Computed</key><true/>
+			<key>Normalization</key><integer>3109</integer>
+			<key>Persistent ID</key><string>3F87F87364A05FAD</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/jeff/Music/iTunes/iTunes%20Music/Silversun%20Pickups/Pikul/01%20Kissing%20Families.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1546</key>
+		<dict>
+			<key>Track ID</key><integer>1546</integer>
+			<key>Name</key><string>Comeback Kid</string>
+			<key>Artist</key><string>Silversun Pickups</string>
+			<key>Album</key><string>Pikul</string>
+			<key>Genre</key><string>Alternative &#38; Punk</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7268806</integer>
+			<key>Total Time</key><integer>250331</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>23</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2008-12-02T20:55:52Z</date>
+			<key>Date Added</key><date>2008-03-19T14:34:55Z</date>
+			<key>Bit Rate</key><integer>232</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3316697142</integer>
+			<key>Play Date UTC</key><date>2009-02-05T21:45:42Z</date>
+			<key>Rating</key><integer>60</integer>
+			<key>Album Rating</key><integer>60</integer>
+			<key>Album Rating Computed</key><true/>
+			<key>Normalization</key><integer>3078</integer>
+			<key>Persistent ID</key><string>3F87F87364A05FAF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/jeff/Music/iTunes/iTunes%20Music/Silversun%20Pickups/Pikul/02%20Comeback%20Kid.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+    </dict>
+  </dict>
+</dict>
+</plist>

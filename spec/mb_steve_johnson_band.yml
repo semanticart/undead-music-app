@@ -1,0 +1,75 @@
+--- 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: blues guitarist
+  mid: c0c78840-3c8c-449c-bd31-053a9cbc7c93
+  name: Steve Johnson
+  release_rels: 
+  score: "100"
+  sort_name: Steve Johnson
+  track_rels: 
+  type: Person
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: UK techno producer aka Eclipse
+  mid: 7a9f93a5-15bd-41b7-b744-68c68928e593
+  name: Steve Johnson
+  release_rels: 
+  score: "100"
+  sort_name: Steve Johnson
+  track_rels: 
+  type: Person
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: UK hard house producer Steve Murrell
+  mid: 410c3b5c-28ae-41f4-94a1-f022528e1fea
+  name: Steve Johnson
+  release_rels: 
+  score: "100"
+  sort_name: Steve Johnson
+  track_rels: 
+  type: Person
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: 
+  mid: c571a007-456c-4997-8f49-7e99094029aa
+  name: Steve Johnson vs. Kreation
+  release_rels: 
+  score: "80"
+  sort_name: Steve Johnson vs. Kreation
+  track_rels: 
+  type: Group
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  begin: "1968"
+  disambiguation: 
+  end: 
+  mid: e57f0cac-4f56-473c-8d7e-d93f753fd586
+  name: Steve Miller Band
+  release_rels: 
+  score: "74"
+  sort_name: Steve Miller Band
+  track_rels: 
+  type: Group
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: 
+  mid: caf89a79-b433-4eaf-8562-1bf5376759b7
+  name: The Steve Gibbons Band
+  release_rels: 
+  score: "72"
+  sort_name: The Steve Gibbons Band
+  track_rels: 
+  type: Group
+  url_rels: 

@@ -1,0 +1,31 @@
+<h2>Find your artists on the <a href="http://www.archive.org/details/etree" target="_blank">Live Music Archive</a></h2>
+
+
+<h3>You have 2 options</h3>
+
+<ol>
+  <li>
+    <h4>Easiest:  Give me your last.fm user name:</h4>
+    <p>If you use <a href="http://last.fm" target="_blank">last.fm</a> then we scrape your top artists and artists from your recent tracks and see which ones have recordings.</p>
+    <form method="POST" action="/lastfm">
+      <p><label for="user">last.fm user:</label> <input type="text" id="user" name="user" /> <input type=submit value=Submit></p>
+    </form>
+  </li>
+  <li>
+    <h4>More Complicated but More Thorough:  Upload your iTunes Library xml export</h4>
+    <p>If you upload an export of your iTunes library, we can scan your artists and check each one.  (Don't worry, I won't hand it over to the RIAA, MPAA, or Robocop)</p>
+    <ol><strong>Export instructions:</strong>
+      <li>In iTunes, go to the file menu</li>
+      <li>Click Library</li>
+      <li>Click Export Library and save the file to disk</li>
+    </ol>
+
+    <br/>
+
+    <form method='POST' enctype='multipart/form-data' action='/upload'>
+      <label for="library">Library File:</label> <input type="file" id="library" name="library"><br>
+      <br>
+      <input type='submit' value="Upload Library"> (this may take awhile if you have a large library)
+    </form>
+  </li>
+</ol>

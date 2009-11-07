@@ -1,0 +1,51 @@
+--- 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  begin: "1964"
+  disambiguation: 
+  end: 
+  mid: 83d91898-7763-47d7-b03b-b92132375c47
+  name: Pink Floyd
+  release_rels: 
+  score: "100"
+  sort_name: Pink Floyd
+  track_rels: 
+  type: Group
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: 
+  mid: d5714af1-5891-4c27-8cb1-314b98984886
+  name: Eric Prydz vs. Floyd
+  release_rels: 
+  score: "55"
+  sort_name: Eric Prydz vs. Floyd
+  track_rels: 
+  type: Group
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: 
+  mid: cebe344d-89fd-4a80-a250-ab24ec1f4284
+  name: Pink Floyd the Barber
+  release_rels: 
+  score: "52"
+  sort_name: Pink Floyd the Barber
+  track_rels: 
+  type: Unknown
+  url_rels: 
+- !ruby/object:MBWS::Artist 
+  aliases: 
+  artist_rels: 
+  disambiguation: 
+  mid: 06918e65-42d3-49c3-be43-09619d99eb06
+  name: The Pink Floyd Project
+  release_rels: 
+  score: "52"
+  sort_name: The Pink Floyd Project
+  track_rels: 
+  type: Unknown
+  url_rels: 

@@ -1,0 +1,19 @@
+This is a sample app for interacting with the (as-yet-undocumented) "UndeadMusicAPI":http://undeadmusicapi.semanticart.com.
+
+You can check out an example of this app in action at "http://undeadmusic.semanticart.com":http://undeadmusic.semanticart.com
+
+
+More documentation will follow.
+
+
+Getting Started:
+
+* copy config.yml.template to config.yml
+
+
+TODO:
+
+* better documentation
+* browsing by genres
+* more sources than just the Live Music Archive
+* browsing all known recordings

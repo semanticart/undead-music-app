@@ -1,0 +1,42 @@
+---
+- !ruby/object:Scrobbler::Artist
+  image: http://userserve-ak.last.fm/serve/126/158521.jpg
+  mbid: a96ac800-bfcb-412a-8a63-0a98df600700
+  name: Modest Mouse
+  playcount: "1616"
+  rank: "1"
+  thumbnail: http://userserve-ak.last.fm/serve/34/158521.jpg
+  url: http://www.last.fm/music/Modest+Mouse
+- !ruby/object:Scrobbler::Artist
+  image: http://userserve-ak.last.fm/serve/126/373930.jpg
+  mbid: c1e98e4a-4628-4c89-a7a6-0e0171600b05
+  name: Minus the Bear
+  playcount: "1304"
+  rank: "2"
+  thumbnail: http://userserve-ak.last.fm/serve/34/373930.jpg
+  url: http://www.last.fm/music/Minus+the+Bear
+- !ruby/object:Scrobbler::Artist
+  image: http://userserve-ak.last.fm/serve/126/27848859.jpg
+  mbid: 61386f55-12b6-45be-baf2-7c9406965808
+  name: The Appleseed Cast
+  playcount: "1054"
+  rank: "3"
+  thumbnail: http://userserve-ak.last.fm/serve/34/27848859.jpg
+  url: http://www.last.fm/music/The+Appleseed+Cast
+- !ruby/object:Scrobbler::Artist
+  image: http://userserve-ak.last.fm/serve/126/30493777.png
+  mbid: fa927f59-d443-418a-b741-e557208aaf09
+  name: Mew
+  playcount: "802"
+  rank: "4"
+  thumbnail: http://userserve-ak.last.fm/serve/34/30493777.png
+  url: http://www.last.fm/music/Mew
+- !ruby/object:Scrobbler::Artist
+  image: http://userserve-ak.last.fm/serve/126/23579869.jpg
+  mbid: 4236acde-2ce2-441c-a3d4-38d55f1b5474
+  name: Explosions in the Sky
+  playcount: "125"
+  rank: "19"
+  thumbnail: http://userserve-ak.last.fm/serve/34/23579869.jpg
+  url: http://www.last.fm/music/Explosions+in+the+Sky
+

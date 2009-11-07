@@ -1,0 +1,20 @@
+<h2>We found <%= artist_count(@matches.size) %> with <%= recording_count(@matches) %></h2>
+
+<p>
+  For your convenience, you can bookmark this url.
+  <% if @extractor.is_a?(ITunesExtractor) %>
+    It should exist until we need to clear out some disk space.
+  <% end %>
+</p>
+
+<ul id="matches">
+  <% @matches.sort{|a,b| a['name'] <=> b['name']}.each do |match| %>
+    <li>
+      <% unless match['thumbnail'].nil? or match['thumbnail'].empty? %>
+        <img src="<%= match['thumbnail'] %>">
+      <% end %>
+      <a target="_blank" href="http://www.archive.org<%= match['archive_link']['artist_url'] %>" title="view artist on archive.org"><%= match['name'] %></a>
+      (<a target="_blank" href="http://www.archive.org<%= match['archive_link']['show_url'] %>" title="view recordings on archive.org"><%= match['archive_link']['show_count'] %></a>)
+    </li>
+  <% end %>
+</ul>

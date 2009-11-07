@@ -1,0 +1,32 @@
+<h1>About</h1>
+
+<p>Keep in mind that this project is A) in its infancy and B) just a hobby project.</p>
+
+<h3>Why?</h3>
+
+<p>
+  Because the <a href="http://www.archive.org/details/etree" target="_blank">Internet Archive's Live Music Archive</a> doesn't have the visibility it should (I keep bumping into people who have no idea it exists).  Also, my interactions with it normally went like this:  
+  <ul>
+    <li>Wonder if an artist is in the archive</li>
+    <li>Go to the <a href="http://www.archive.org/browse.php?collection=etree&field=%2Fmetadata%2Fcreator" target="_blank">artist index</a></li>
+    <li>Search the page for that artist and maybe find them.</li>
+  </ul>
+
+  Lather, rinse, repeat.  But it was too much of a pain to do a find on the page for every artist I listen to.  I wanted an easier way.  So I wrote a little script, found it useful, so threw up a front-end on it.  Hopefully it will be beneficial to a few people.
+</p>
+
+<p>Next is adding in additional resources...</p>
+
+<h3>Some artists aren't matching (or matching incorrectly) or some of the numbers on the show counts are wrong</h3>
+
+<p>
+  Bummer.  I get the data from the archive by doing a daily screen-scrape.  The show counts are accurate in so much as that's what the artist index says when the scrape is done.  That page can be wrong, or maybe a show has been added/removed since it was scraped.
+</p>
+
+<p>
+That being said, if you find something consistently wrong or if your artists are matching incorrectly, you can let me know by emailing me.  I can't promise I'll fix it quickly, but I'll appreciate it and keep it in mind as I make improvements.   email jeff [at] semanticart.com
+</p>
+
+<h3>How?</h3>
+
+<p>This is a simple ruby app powered by <a href="http://www.sinatrarb.com/" target="_blank">sinatra</a>.  You can <a href="http://github.com/semanticart/undead-music-app">browse the source of the project on github</a>.</p>

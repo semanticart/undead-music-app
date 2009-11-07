@@ -1,0 +1,53 @@
+--- 
+- !ruby/object:Artist 
+  _id: 4adf2607c6cfbc8d5f00010c
+  _id_before_typecast: 4adf2607c6cfbc8d5f00010c
+  aliases: &id001 
+    - eits
+    - explosions in the sky
+  aliases_before_typecast: *id001
+  archive_link: "{\"artist_url\":\"/details/ExplosionsintheSky\",\"show_count\":64,\"show_url\":\"/search.php?query=collection%3AExplosionsintheSky\"}"
+  archive_link_before_typecast: "{\"artist_url\":\"/details/ExplosionsintheSky\",\"show_count\":64,\"show_url\":\"/search.php?query=collection%3AExplosionsintheSky\"}"
+  changed_keys: {}
+
+  mid: 4236acde-2ce2-441c-a3d4-38d55f1b5474
+  mid_before_typecast: 4236acde-2ce2-441c-a3d4-38d55f1b5474
+  name: explosions in the sky
+  name_before_typecast: explosions in the sky
+  verified: false
+  verified_before_typecast: false
+- !ruby/object:Artist 
+  _id: 4adf260cc6cfbc8d5f000515
+  _id_before_typecast: 4adf260cc6cfbc8d5f000515
+  aliases: &id002 
+    - harvy danger
+    - harvey danger
+  aliases_before_typecast: *id002
+  archive_link: "{\"artist_url\":\"/details/HarveyDanger\",\"show_count\":8,\"show_url\":\"/search.php?query=collection%3AHarveyDanger\"}"
+  archive_link_before_typecast: "{\"artist_url\":\"/details/HarveyDanger\",\"show_count\":8,\"show_url\":\"/search.php?query=collection%3AHarveyDanger\"}"
+  changed_keys: {}
+
+  mid: 822cb123-f728-4a1a-931c-fa27257bb83f
+  mid_before_typecast: 822cb123-f728-4a1a-931c-fa27257bb83f
+  name: harvey danger
+  name_before_typecast: harvey danger
+  verified: false
+  verified_before_typecast: false
+- !ruby/object:Artist 
+  _id: 4adf260ec6cfbc8d5f000647
+  _id_before_typecast: 4adf260ec6cfbc8d5f000647
+  aliases: &id003 
+    - mogwa
+    - mogwai
+  aliases_before_typecast: *id003
+  archive_link: "{\"artist_url\":\"/details/Mogwai\",\"show_count\":97,\"show_url\":\"/search.php?query=collection%3AMogwai\"}"
+  archive_link_before_typecast: "{\"artist_url\":\"/details/Mogwai\",\"show_count\":97,\"show_url\":\"/search.php?query=collection%3AMogwai\"}"
+  changed_keys: {}
+
+  mid: d700b3f5-45af-4d02-95ed-57d301bda93e
+  mid_before_typecast: d700b3f5-45af-4d02-95ed-57d301bda93e
+  name: mogwai
+  name_before_typecast: mogwai
+  verified: false
+  verified_before_typecast: false
+

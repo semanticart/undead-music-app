@@ -1,0 +1,8 @@
+BODY{font-family: Helvetica, sans-serif; line-height:130%}
+h1, h2, h3, h4, h5 {font-family: Verdana}
+
+#matches {list-style-type:none}
+#matches li {line-height:250%; vertical-align:middle; margin-bottom:5px}
+#matches img {margin-right:5px; vertical-align:middle}
+
+#footer {text-align:center; margin-top:100px}
