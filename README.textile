@@ -15,5 +15,4 @@ TODO:
 
 * better documentation
 * browsing by genres
-* more sources than just the Live Music Archive
 * browsing all known recordings
