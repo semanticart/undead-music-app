@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'i18n'
 require 'rest_client'
 require 'yaml'
 require 'json'
@@ -15,6 +16,24 @@ configure do
 end
 
 helpers do
+  def link_out url, text, title = url
+    %(<a target="_blank" href="#{url}" title="#{title}">#{text}</a>)
+  end
+
+  def link_text(link)
+    text = domain(link)
+    text << %( (#{link['count']})) if link['count'].to_i > 0
+  end
+
+  def archive_link?(link)
+    domain(link) == "archive.org"
+  end
+
+  def domain(link)
+    @domains ||= {}
+    @domains[link] ||= URI.parse(link['url']).host.scan(/^.*?([^.]+\.[^.]+)$/)[0][0].downcase
+  end
+
   def unique_token
     token = ""
     # sure, these collisions are unlikely
@@ -29,7 +48,8 @@ helpers do
   end
 
   def recording_count matches
-    count = matches.inject(0){|sum, match| sum + match['archive_link']['show_count']}
+
+    count = matches.inject(0){|sum, match| p match; sum + match['links'].inject(0){|sum, link| sum + link['count'].to_i}}
     [count.to_s, (count == 1 ? "recording" : "recordings")].join(' ')
   end
 

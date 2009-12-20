@@ -4,17 +4,33 @@
   For your convenience, you can bookmark this url.
   <% if @extractor.is_a?(ITunesExtractor) %>
     It should exist until we need to clear out some disk space.
+  <% else%>
+    It will be updated as your last.fm lists change or we learn more about your artists.
   <% end %>
 </p>
 
 <ul id="matches">
   <% @matches.sort{|a,b| a['name'] <=> b['name']}.each do |match| %>
     <li>
-      <% unless match['thumbnail'].nil? or match['thumbnail'].empty? %>
-        <img src="<%= match['thumbnail'] %>">
-      <% end %>
-      <a target="_blank" href="http://www.archive.org<%= match['archive_link']['artist_url'] %>" title="view artist on archive.org"><%= match['name'] %></a>
-      (<a target="_blank" href="http://www.archive.org<%= match['archive_link']['show_url'] %>" title="view recordings on archive.org"><%= match['archive_link']['show_count'] %></a>)
+      <div class="icon">
+        <% unless match['thumbnail'].nil? or match['thumbnail'].empty? %>
+          <img src="<%= match['thumbnail'] %>">
+        <% end %>
+      </div>
+      <div class="links">
+        <%= link_out match['last_fm_url'], match['name'], "View #{match['name']} on last.fm" %>
+        <% if link = match['links'].detect{|link| archive_link?(link)} %>
+          |
+          <%= link_out link['alt_url'], "archive.org", "view artist on archive.org" %>
+          (<%= link_out link['url'], link['count'], "view recordings on archive.org" %>)
+        <% end %>
+        <br/>
+        <%=
+          (match['links'] - [link]).map do |link|
+            link_out(link['url'], link_text(link), "view recordings on #{domain(link)}")
+          end.sort.join(' | ')
+        %>
+      </div>
     </li>
   <% end %>
 </ul>
