@@ -1,15 +1,15 @@
-<h2>Find your artists on the <a href="http://www.archive.org/details/etree" target="_blank">Live Music Archive</a></h2>
-
+<h2>Find your artists on the <a href="http://www.archive.org/details/etree" target="_blank">Live Music Archive</a> (and elsewhere)</h2>
 
 <h3>You have 2 options</h3>
 
 <ol>
   <li>
-    <h4>Easiest:  Give me your last.fm user name:</h4>
+    <h4>Easiest:  Give me your last.fm user name</h4>
     <p>If you use <a href="http://last.fm" target="_blank">last.fm</a> then we scrape your top artists and artists from your recent tracks and see which ones have recordings.</p>
     <form method="POST" action="/lastfm">
       <p><label for="user">last.fm user:</label> <input type="text" id="user" name="user" /> <input type=submit value=Submit></p>
     </form>
+    <p>(view <a href="/lastfm/violencenow">a sample result</a>)</p>
   </li>
   <li>
     <h4>More Complicated but More Thorough:  Upload your iTunes Library xml export</h4>
