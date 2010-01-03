@@ -9,7 +9,7 @@ describe LastFMExtractor do
 
   context "extracting artists from recent and top artists" do
     it "returns artists on a valid request" do
-      LastFMExtractor.new(@scrobbler).matches.map{|x| x['name']}.sort.should == ["explosions in the sky", "mogwai"]
+      LastFMExtractor.new(@scrobbler).matches.map{|x| x['name']}.sort.should == ["explosions in the sky", "minus the bear", "modest mouse", "mogwai", "the appleseed cast"]
     end
   end
 end
