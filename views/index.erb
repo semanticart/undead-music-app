@@ -1,31 +1,41 @@
-<h2>Find your artists on the <a href="http://www.archive.org/details/etree" target="_blank">Live Music Archive</a> (and elsewhere)</h2>
+<h3>Pick an option:</h3>
+<div id="container">
+  <div id="options">
+    <div onclick="showOpt(1)" id="option_button_1" class="opt"></div>
+    <p class="example"><a href="/lastfm/violencenow">view example last.fm</a></p>
+    <div onclick="showOpt(2)" id="option_button_2" class="opt"></div>
+  </div>
+  <div id="interaction">
+    <div id="option_1">
+      <h3>Give me your last.fm user name</h3>
+      <p>Enter your <a href="http://last.fm" target="_blank">last.fm</a> user name and we scrape your top artists and artists from your recent tracks and see which ones have recordings.</p>
+      <form method="POST" action="/lastfm">
+        <p><label for="user">last.fm user:</label> <input type="text" id="user" name="user" /> <input type=submit value=Submit></p>
+      </form>
+    </div>
 
-<h3>You have 2 options</h3>
+    <div id="option_2">
+      <h3>Upload your iTunes Library xml export</h3>
+      <p>If you upload an export of your iTunes library, we can scan your artists and check each one.  (Don't worry, I won't hand it over to the RIAA, MPAA, or Robocop)</p>
+      <ol><strong>Export instructions:</strong>
+        <li>In iTunes, go to the file menu</li>
+        <li>Click Library</li>
+        <li>Click Export Library and save the file to disk</li>
+      </ol>
 
-<ol>
-  <li>
-    <h4>Easiest:  Give me your last.fm user name</h4>
-    <p>If you use <a href="http://last.fm" target="_blank">last.fm</a> then we scrape your top artists and artists from your recent tracks and see which ones have recordings.</p>
-    <form method="POST" action="/lastfm">
-      <p><label for="user">last.fm user:</label> <input type="text" id="user" name="user" /> <input type=submit value=Submit></p>
-    </form>
-    <p>(view <a href="/lastfm/violencenow">a sample result</a>)</p>
-  </li>
-  <li>
-    <h4>More Complicated but More Thorough:  Upload your iTunes Library xml export</h4>
-    <p>If you upload an export of your iTunes library, we can scan your artists and check each one.  (Don't worry, I won't hand it over to the RIAA, MPAA, or Robocop)</p>
-    <ol><strong>Export instructions:</strong>
-      <li>In iTunes, go to the file menu</li>
-      <li>Click Library</li>
-      <li>Click Export Library and save the file to disk</li>
-    </ol>
+      <br/>
 
-    <br/>
+      <form method='POST' enctype='multipart/form-data' action='/upload'>
+        <label for="library">Library File:</label> <input type="file" id="library" name="library"><br>
+        <br>
+        <input type='submit' value="Upload Library"> <span class="small">(this may take awhile if you have a large library)</span>
+      </form>
+    </div>
+  </div>
+</div>
 
-    <form method='POST' enctype='multipart/form-data' action='/upload'>
-      <label for="library">Library File:</label> <input type="file" id="library" name="library"><br>
-      <br>
-      <input type='submit' value="Upload Library"> (this may take awhile if you have a large library)
-    </form>
-  </li>
-</ol>
+<script>
+  $.each(options, function(){
+    $('#option_' + this).hide();
+  });
+</script>
