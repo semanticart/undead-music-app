@@ -48,8 +48,11 @@ helpers do
   end
 
   def recording_count matches
-
-    count = matches.inject(0){|sum, match| p match; sum + match['links'].inject(0){|sum, link| sum + link['count'].to_i}}
+    count = matches.inject(0) do |sum, match|
+      sum + match['links'].inject(0) do |sum, link|
+        sum + link['count'].to_i
+      end
+    end
     [count.to_s, (count == 1 ? "recording" : "recordings")].join(' ')
   end
 
