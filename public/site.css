@@ -5,9 +5,9 @@ a:visited{color:#014101;}
 #options{float:left; width:375px}
 #interaction{float:left; width:400px;}
 #footer{clear:both; text-align:center; padding-top:50px}
-.opt{width:296px; padding:0px; margin:0px; cursor:pointer}
-#option_button_1{ background: url('/1n.jpg') no-repeat; height:60px;}
-#option_button_2{ background: url('/2n.jpg') no-repeat; height:118px; margin-top:20px; clear:after}
+.opt{width:296px; padding:0px; margin:0px; cursor:pointer; -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: -5px 5px 5px rgba(0, 0, 0, .5); box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);}
+#option_button_1{ height:60px;}
+#option_button_2{height:118px; margin-top:20px; clear:after}
 .small{font-size:smaller}
 .example{text-align:right; margin-right:85px}
 
