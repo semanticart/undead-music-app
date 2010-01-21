@@ -1,11 +1,11 @@
 class ArtistAPI
   def self.all conditions = {}
-    if conditions[:names] || conditions[:mbids]
-      key = (conditions[:names] ? :names : :mbids)
-      JSON.parse(RestClient.post("#{CONFIG[:api_url]}/api/artists/list.json", key => conditions[key].join('|')))
+    if conditions.keys.any?{|key| [:names, :mbids, :q].include?(key)}
+      joined_conditions = conditions.inject({}){|hash, pair| hash[pair[0]] = pair[1].join('|'); hash}
+      JSON.parse(RestClient.post("#{CONFIG[:api_url]}/api/artists/list.json", joined_conditions))
     else
       # TODO: better error
-      raise "you must pass mids or names"
+      raise "you must pass :mbids, :names, or :q"
     end
   end
 end

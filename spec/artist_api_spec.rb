@@ -10,7 +10,7 @@ describe ArtistAPI do
     context "finding artists matching a list of musicbrainz ids" do
       it "should return matches if there are any" do
         res = ArtistAPI.all(:mbids => EXPECTED.values + ['abc123'])
-        res.map{|x| x['name']}.sort.should == EXPECTED.keys.sort
+        res.map{|x| x['name']}.should =~ EXPECTED.keys
       end
 
       it "should return an empty array if there are no matches" do
@@ -23,11 +23,18 @@ describe ArtistAPI do
         # replace the so we find "smashing pumpkins" (which is an alias)
         # mogwai is not aliased
         res = ArtistAPI.all(:names => EXPECTED.keys.map{|x| x.sub(/the /, '')} + ["robocop versus the devil"])
-        res.map{|x| x['mid']}.sort.should == EXPECTED.values.sort
+        res.map{|x| x['mid']}.should =~ EXPECTED.values
       end
 
       it "should return an empty array if there are no matches" do
         ArtistAPI.all(:names => ["robocop versus the devil", "eight ninjas stole my sandwich"]).should == []
+      end
+    end
+
+    context "finding artists matching names or mbids" do
+      it 'returns all matches for any input' do
+        query = {:q => [EXPECTED.keys.first, EXPECTED.values.first, EXPECTED.values.last]}
+        ArtistAPI.all(query).map{|x| x['mid']}.should =~ EXPECTED.values
       end
     end
   end

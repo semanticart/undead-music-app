@@ -33,7 +33,7 @@
   url: http://www.last.fm/music/Mew
 - !ruby/object:Scrobbler::Artist
   image: http://userserve-ak.last.fm/serve/126/23579869.jpg
-  mbid: 4236acde-2ce2-441c-a3d4-38d55f1b5474
+  mbid: ""
   name: Explosions in the Sky
   playcount: "125"
   rank: "19"
